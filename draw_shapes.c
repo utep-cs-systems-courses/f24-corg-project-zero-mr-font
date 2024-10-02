@@ -26,3 +26,15 @@ void print_triangle(int leftCol, int size)
   }
 }
 
+//Start of test idea for project zero
+//print picket fence post: Simple function to first invoke print_triangle, then invoke print_squre
+//to draw a picket fence post like image
+void print_picket_fence_post(int leftCol,int size)
+{
+  print_triangle(leftCol, size);
+  print_square(leftCol, size);
+  putchar('\n');
+}
+
+//Idea: if this works we can next add a 'mask' that will change half of the elements in the left and right side of the square to be a blank element.
+//This isn't efficient, but will draw an upward pointing arrow
